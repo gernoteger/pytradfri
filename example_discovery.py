@@ -18,6 +18,9 @@ import time
 
 from pytradfri import Gateway
 from pytradfri.api.libcoap_api import APIFactory
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 def observe(api, device):
