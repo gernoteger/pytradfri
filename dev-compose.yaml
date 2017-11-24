@@ -1,0 +1,9 @@
+# compose file for e.g. IntelliJ
+version: '3'
+services:
+  pytradfri-dev:
+    build: .
+    image: pytradfri-dev:develop
+
+    # required for udp traffic!!
+    network_mode: "host"
